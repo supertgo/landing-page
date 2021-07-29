@@ -10,6 +10,12 @@ export type Concepts = {
   title: string;
 };
 
+export type Module = {
+  title: string;
+  subtitle: string;
+  description: string;
+};
+
 export type LogoProps = {
   alternativeText: string;
   url: string;
@@ -42,14 +48,21 @@ export type SectionTechProps = {
   techIcons: TechIcon[];
 };
 
-export type sectionConceptsProps = {
+export type SectionConceptsProps = {
   title: string;
   concepts: Concepts[];
 };
+
+export type SectionModulesProps = {
+  title: string;
+  modules: Module[];
+};
+
 export type LandingPageProps = {
   logo: LogoProps;
   header: HeaderProps;
   sectionAboutProject: SectionAboutProjectProps;
   sectionTech: SectionTechProps;
-  sectionConcepts: sectionConceptsProps;
+  sectionConcepts: SectionConceptsProps;
+  sectionModules: SectionModulesProps;
 };
