@@ -37,8 +37,18 @@ fragment sectionTech on LandingPage {
     title
     techIcons {
       icon {
+        alternativeText
         url
       }
+      title
+    }
+  }
+}
+
+fragment sectionConcepts on LandingPage {
+  sectionConcepts {
+    title
+    concepts {
       title
     }
   }
@@ -50,6 +60,7 @@ query GET_LANDING_PAGE {
     ...header
     ...sectionAboutProject
     ...sectionTech
+    ...sectionConcepts
   }
 }
 `;
