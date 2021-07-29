@@ -6,7 +6,7 @@ import Heading from 'components/Heading';
 import * as S from './styles';
 import { SectionConceptsProps } from 'types/api';
 
-const SectionConcepts = ({ title, concepts }: sectionConceptsProps) => (
+const SectionConcepts = ({ title, concepts }: SectionConceptsProps) => (
   <Container>
     <S.Box>
       <Heading lineBottom>{title}</Heading>
