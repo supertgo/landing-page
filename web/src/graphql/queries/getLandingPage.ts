@@ -129,6 +129,12 @@ fragment sectionFaq on LandingPage {
     }
   }
 }
+
+fragment footer on LandingPage {
+  footer {
+    title
+  }
+}
 query GET_LANDING_PAGE {
   landingPage {
     ...logo
@@ -142,6 +148,7 @@ query GET_LANDING_PAGE {
     ...sectionAboutUs
     ...sectionReviews
     ...sectionFaq
+    ...footer
   }
 }
 
